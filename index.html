@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <!--Task 1 and 2 together, the main page is made for task 1 and you can test the second task if you
+        open develpoer tools in the opened page-->
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"> <!-- define metadata, information about the page-->
+        <title> 1_Feladat</title>
+        <link href="style/style.css" rel="stylesheet" type="text/css"><!--connect the codes-->
+        <script src="script/3_a_paralellogram.js"></script>
+        <script src="script/3_b_random_strings.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="container"> <!-- Create a division with the class name "container-->
+
+            <div class="content">  <!-- Create a division with the class name "content-->
+
+                <!-- The main text of the page-->
+                <p>Triumph amidst advirsety</p>
+                <h1>Apollo <span>13</span></h1> <!--Title of the text-->
+                <br>
+                <p>Apollo 13 was launched on April 11, 1970, for what was planned to be the third human landing 
+                    on the Moon. The crew included Commander Jim Lovell and Lunar Module Pilot Fred Haise, who 
+                    were scheduled to land in the lunar module Aquarius and explore the Fra Mauro region of the 
+                    Moon. Command Module Pilot Ken Mattingly would remain in lunar orbit in the command module 
+                    Odyssey. However, four days prior to launch, it was determined that Mattingly had been exposed 
+                    to measles and had no immunity. In order to avoid the possibility of Mattingly becoming sick 
+                    during the flight, he was replaced by his back up, Jack Swigert.</p>
+                    
+                    <br>
+                    <p>On the third day of the mission, when the spacecraft was nearly 200,000 miles from Earth, the 
+                        routine activation of a fan in one of the service module's oxygen tanks led to a short circuit 
+                        and an explosion in that tank. As a result, both oxygen tanks ruptured and vented their contents 
+                        to space. The lunar landing was cancelled and the crew used the lunar module as a life boat 
+                        to sustain them for the return trip back to Earth. The lunar module was designed to support 2
+                        people for 2 days and was suddenly required to support 3 people for nearly 4 days. The crew 
+                        subsisted on 6 ounces of water per person a day. Power was severely rationed, and the temperature 
+                        inside the cabin dropped below 40 °F (4 °C), causing the crew great difficulty sleeping. The two 
+                        spacecraft both used lithium hydroxide canisters to remove carbon dioxide from the atmosphere, but 
+                        the canisters had different shapes on the two spacecraft. CO2 levels were approaching dangerous 
+                        levels when Mission Control designed a system using plastic bags, cardboard, and duct tape that 
+                        allowed Aquarius to successfully use lithium hydroxide canisters from Odyssey. The crew used the
+                        engines on Aquarius to make three trajectory correction maneuvers that were needed to reach the 
+                        landing zone in the Pacific Ocean. When Odyssey entered Earth's atmosphere, it was unknown if 
+                        the explosion had damaged the spacecraft's heat shield; fortunately, it was undamaged. Because 
+                        of the low cabin temperature, atmospheric humidity had condensed, covering the cabin interior 
+                        with drops of liquid water that fell as rain during the reentry. Despite these dangers, the crew 
+                        landed safely near Samoa six days after the mission began.</p>
+                        
+                    <br>
+                    <p>A post-mission investigation revealed that the explosion was a result of a change made to the spacecraft 
+                    design in 1965, when the heaters in the oxygen tanks were changed from 28 volts to 65 volts. Unfortunately, 
+                    the switches in the tank that exploded were not changed to handle the higher voltage, resulting in 
+                    unrecognized damage during a ground test two weeks before the launch and ultimately in the short circuit 
+                    during flight. As a safety measure, later Apollo spacecraft were modified to include a third oxygen 
+                    tank that was isolated from the first two tanks and also included additional emergency battery power.</p>
+
+                <!-- Create a link for the page of NASA, with a button-->
+                <button onclick="redirectToWebpage()">Learn more in NASA<img src="images/triangle.png"></button>
+                <script>
+                    // JavaScript function to redirect to the desired webpage
+                    function redirectToWebpage() {
+                        window.location.href = 'https://www.nasa.gov/missions/apollo/apollo-13-mission-details/';
+                    }
+                </script>
+                
+                
+            </div>
+            <img src="images/rocket.png" class="rocket"> <!-- embed the rocket picture-->
+        </div>
+        
+    </body> 
+</html>

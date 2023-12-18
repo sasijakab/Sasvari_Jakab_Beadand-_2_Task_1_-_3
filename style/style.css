@@ -1,0 +1,76 @@
+/* Reset default margin, padding, font family, and box-sizing for the entire document */
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Style for the main container*/
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8;
+    position: relative;
+}
+
+/* Style for the content inside the main container,and style for h1 and p**/
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+.content h1 span{
+    color: #ff3753;
+}
+
+/*With justify I created the edge of the text straight*/
+.content p{
+    width: 68vw;
+    text-align: justify;
+}
+
+/*Stlye the button and the width of the button image*/
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.content button img{
+    width: 15px;
+    margin-left: 10px;
+}
+
+/*The style of the flying rocket, where I used animation and keyframes for the flight*/
+.rocket{
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
